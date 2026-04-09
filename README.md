@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Run Time Comparisons
 
 ## Serial (Baseline)
@@ -144,3 +145,6 @@ Given the results of the runtime between serial, multiprocessing, and multithrea
 2. We can also see that speedup is not always linear relatie to worker count, as seen in the multiprocessing runtimes, where the jump from 16 to 32 workers actually decreased the speedup by .23x. We can attribute that to the overhead costs of creating seperate processes, communicating through message queues, and context switching. 
 3. Threads with proper synchronization is slower than serial, this is due to GIL as seen above and the lock mechanism for synchronization which requires threads to wait to access global variables.
 Overall, we can conclude that the best performance out of all the program runs was MP (multiprocessing) with 16 workers, which had a 4.10x speedup over serial. This demonstrates that multiprocessing is the prefrred method for CPU-bound parallel computing in Python given what we have learned so far.
+=======
+# multithreadingstatisticsengine
+>>>>>>> 98f5ad1fa1260a5bf4c5cf35501d9bcd30d9bc2c
